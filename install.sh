@@ -1,10 +1,4 @@
-apt-get install vim unzip wget curl git zsh tmux htop fzf fd-find tldr -y
 
-cd /root/
-
-# zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"  -y
-chsh -s $(which zsh) -y
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
@@ -34,3 +28,5 @@ ln -sf /root/.dotfiles/.tmux.conf       /root/.tmux.conf
 ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shell_integration.zsh
+
+source /root/.zshrc
