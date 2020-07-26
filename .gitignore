@@ -1,0 +1,30 @@
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+node_modules
+
+*.pyc
+.DS_Store
+.bundle
+.byebug_history
+.env
+.git/
+.vscode/
+.idea/
+/bower_components/
+/log
+/node_modules/
+/tmp
+/vendor
+*.sqlite3
+tmp/**/*
