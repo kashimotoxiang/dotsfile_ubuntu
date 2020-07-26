@@ -10,6 +10,7 @@ ssh-keygen -f /root/.ssh/id_rsa -N ""
 
 # p10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.oh-my-zsh/custom/themes/powerlevel10k
+source ~/.dotfiles/.p10k.zsh
 
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
