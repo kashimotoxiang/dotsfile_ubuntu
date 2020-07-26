@@ -33,3 +33,7 @@ ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shel
 
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+
+
+# restart zsh
+exec zsh
