@@ -16,6 +16,9 @@ ssh-keygen -f /root/.ssh/id_rsa -N ""
 # ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
 # eval $(~/.linuxbrew/bin/brew shellenv)
 
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+
 # download config file
 [[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles
 git clone https://github.com/kashimotoxiang/dotsfile_ubuntu.git /root/.dotfiles
