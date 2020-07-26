@@ -33,4 +33,6 @@ ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shell_integration.zsh
 
+source ~/.dotfiles/.p10k.zsh
+
 exec zsh
