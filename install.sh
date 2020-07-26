@@ -1,3 +1,5 @@
+cd /root/
+
 # zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"  -y
 chsh -s $(which zsh) -y
@@ -28,4 +30,4 @@ ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 
 # install zplug
-yes | source /root/.zshrc
+source /root/.zshrc
