@@ -1,5 +1,3 @@
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # ssh
 mkdir /root/.ssh
 ssh-keygen -f /root/.ssh/id_rsa -N ""
