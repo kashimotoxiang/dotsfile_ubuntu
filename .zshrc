@@ -6,18 +6,13 @@ fi
 export ZSH=$HOME/.oh-my-zsh
 
 # ===== user configuration
-source $ZSH/oh-my-zsh.sh
-source ~/.dotsfile/fzf.sh
-source ~/.dotsfile/env.sh
-source ~/.dotsfile/zplug.sh
-source ~/.dotsfile/zsh_profile.sh
-source ~/.dotsfile/alias.sh
-source ~/.iterm2_shell_integration.zsh
+[[ ! -f $ZSH/oh-my-zsh.sh ]] || source $ZSH/oh-my-zsh.sh
+[[ ! -f ~/.dotsfile/fzf.sh]] || source ~/.dotsfile/fzf.sh
+[[ ! -f ~/.dotsfile/env.sh ]] || source ~/.dotsfile/env.sh
+[[ ! -f ~/.dotsfile/zplug.sh ]] || source ~/.dotsfile/zplug.sh
+[[ ! -f ~/.dotsfile/zsh_profile.sh ]] || source ~/.dotsfile/zsh_profile.sh
+[[ ! -f ~/.dotsfile/alias.sh ]] || source ~/.dotsfile/alias.sh
+[[ ! -f ~/.iterm2_shell_integration.zsh ]] || source ~/.iterm2_shell_integration.zsh
+[[ ! -f ~/.dotsfile/.p10k.zsh ]] || source ~/.dotsfile/.p10k.zsh
 
 eval $(thefuck --alias)
-
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-eval "$(rbenv init -)"
