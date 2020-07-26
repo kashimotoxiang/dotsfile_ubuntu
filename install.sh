@@ -10,7 +10,8 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 # download config file
 wget "https://codeload.github.com/kashimotoxiang/dotsfile_ubuntu/zip/master" -O temp.zip
-unzip temp.zip && mv dotsfile_ubuntu-master .dotfiles
+[[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles
+unzip temp.zip && mv dotsfile_ubuntu-master
 rm temp.zip
 
 # update config file
