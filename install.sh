@@ -1,6 +1,6 @@
 apt-get update -y
 apt-get upgrade -y
-apt-get install unzip wget curl git zsh tmux htop -y
+apt-get install unzip wget curl git zsh tmux htop fzf fd-find tldr -y
 
 # zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"  -y
@@ -8,11 +8,19 @@ chsh -s $(which zsh) -y
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
+# ssh
+mkdir /root/.ssh
+ssh-keygen -f /root/.ssh/id_rsa -N ""
+
+# linux brew
+# git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+# mkdir ~/.linuxbrew/bin
+# ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+# eval $(~/.linuxbrew/bin/brew shellenv)
+
 # download config file
-wget "https://codeload.github.com/kashimotoxiang/dotsfile_ubuntu/zip/master" -O temp.zip
 [[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles
-unzip temp.zip && mv dotsfile_ubuntu-master
-rm temp.zip
+git clone https://github.com/kashimotoxiang/dotsfile_ubuntu.git && mv /root/dotsfile_ubuntu /root/.dotfiles
 
 # update config file
 ln -sf /root/.dotfiles/.zshrc           /root/.zshrc
@@ -24,4 +32,4 @@ ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 
 # install zplug
-y | source /root/.zshrc -y
+yes | source /root/.zshrc

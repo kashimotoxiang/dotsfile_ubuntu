@@ -15,22 +15,20 @@ else
 fi
 unset __conda_setup
 
-# virtualenvwrapper
-export VIRTUALENV_USE_DISTRIBUTE=1        #  总是使用 pip/distribute
-export WORKON_HOME="${HOME}/opt/anaconda3/envs"      # 所有虚拟环境存储的目录
-export VIRTUALENVWRAPPER_PYTHON="${HOME}/opt/anaconda3/bin/python"      # 所有虚拟环境存储的目录
-source ${HOME}/opt/anaconda3/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-export HOME_PATH="$HOME/"
+# source virual environment if python is installed
+if [[ -f ${HOME}/opt/anaconda3 ]]; then
+    # virtualenvwrapper
+    export VIRTUALENV_USE_DISTRIBUTE=1        #  总是使用 pip/distribute
+    export WORKON_HOME="${HOME}/opt/anaconda3/envs"      # 所有虚拟环境存储的目录
+    export VIRTUALENVWRAPPER_PYTHON="${HOME}/opt/anaconda3/bin/python"      # 所有虚拟环境存储的目录
+    source ${HOME}/opt/anaconda3/bin/virtualenvwrapper.sh
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    export PIP_RESPECT_VIRTUALENV=true
+    export HOME_PATH="$HOME/"
+fi
 
 # ssh
 export SSH_KEY_PATH="${HOME}/.ssh/id_rsa"
-
-# Golang
-export GOPATH=$HOME/gopath
-PATH=$GOPATH:$GOPATH/bin:$PATH
-PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 
 # tldr
 export TLDR_HEADER='magenta bold underline'
