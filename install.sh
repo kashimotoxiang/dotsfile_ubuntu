@@ -1,5 +1,3 @@
-apt-get update -y
-apt-get upgrade -y
 apt-get install vim unzip wget curl git zsh tmux htop fzf fd-find tldr -y
 
 cd /root/
@@ -36,6 +34,3 @@ ln -sf /root/.dotfiles/.tmux.conf       /root/.tmux.conf
 ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shell_integration.zsh
-
-# install zplug
-source /root/.zshrc
