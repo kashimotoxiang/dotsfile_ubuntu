@@ -5,7 +5,4 @@ cd /root/ && apt-get update -y && apt-get install python-is-python2 curl vim unz
 
 # installation
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/kashimotoxiang/dotsfile_ubuntu/master/install.sh)"
-
-exec zsh
-
 ```
