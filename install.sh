@@ -18,7 +18,7 @@ ssh-keygen -f /root/.ssh/id_rsa -N ""
 
 # download config file
 [[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles
-git clone https://github.com/kashimotoxiang/dotsfile_ubuntu.git && mv /root/dotsfile_ubuntu /root/.dotfiles
+git clone https://github.com/kashimotoxiang/dotsfile_ubuntu.git /root/.dotfiles
 
 # update config file
 ln -sf /root/.dotfiles/.zshrc           /root/.zshrc
