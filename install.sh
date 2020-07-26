@@ -13,6 +13,7 @@ ssh-keygen -f /root/.ssh/id_rsa -N ""
 
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
+~/.fzf/install
 
 # download config file
 [[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles
@@ -27,3 +28,5 @@ ln -sf /root/.dotfiles/.tmux.conf       /root/.tmux.conf
 ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shell_integration.zsh
+
+source /root/.zshrc
