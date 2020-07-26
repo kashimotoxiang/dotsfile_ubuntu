@@ -1,3 +1,7 @@
+apt-get update -y
+apt-get upgrade -y
+apt-get install vim unzip wget curl git zsh tmux htop fzf fd-find tldr -y
+
 cd /root/
 
 # zsh
@@ -17,7 +21,7 @@ ssh-keygen -f /root/.ssh/id_rsa -N ""
 # eval $(~/.linuxbrew/bin/brew shellenv)
 
 # fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
 
 # download config file
 [[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles

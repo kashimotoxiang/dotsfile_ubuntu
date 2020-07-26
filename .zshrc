@@ -14,5 +14,3 @@ source ~/.dotfiles/zsh_profile.sh
 source ~/.dotfiles/alias.sh
 source ~/.iterm2_shell_integration.zsh
 source ~/.dotfiles/.p10k.zsh
-
-eval $(thefuck --alias)

@@ -14,10 +14,8 @@ zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/encode64", from:oh-my-zsh
 zplug 'plugins/extract', from:oh-my-zsh
 zplug 'plugins/command-not-found', from:oh-my-zsh
-zplug "Jxck/dotfiles", as:command, use:"bin/{histuniq,color}"
 zplug "agkozak/zsh-z"
 zplug romkatv/powerlevel10k, as:theme, depth:1
-zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 zplug "Tarrasch/zsh-autoenv", from:github
 zplug "zdharma/history-search-multi-word", from:github
 zplug "b4b4r07/enhancd", use:init.sh
