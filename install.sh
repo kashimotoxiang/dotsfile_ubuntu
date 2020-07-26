@@ -31,6 +31,7 @@ ln -sf /root/.dotfiles/.pylintrc        /root/.pylintrc
 ln -sf /root/.dotfiles/.tmux.conf       /root/.tmux.conf
 ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
+ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shell_integration.zsh
 
 # install zplug
 source /root/.zshrc
