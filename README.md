@@ -6,4 +6,6 @@ cd /root/ && apt-get update -y && apt-get install curl vim unzip wget curl git z
 # installation
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/kashimotoxiang/dotsfile_ubuntu/master/install.sh)"
 
+source /root/.zshrc
+
 ```
