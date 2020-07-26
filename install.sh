@@ -1,5 +1,4 @@
-# zplug
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # ssh
 mkdir /root/.ssh
@@ -16,7 +15,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.oh-my-zs
 
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
-~/.fzf/install
+~/.fzf/install --all
 
 # download config file
 [[ ! -f /root/.dotfiles ]] || rm -rf /root/.dotfiles
@@ -33,6 +32,5 @@ ln -sf /root/.dotfiles/.tmux.conf.local /root/.tmux.conf.local
 ln -sf /root/.dotfiles/.vimrc           /root/.vimrc
 ln -sf /root/.dotfiles/.iterm2_shell_integration.zsh          /root/.iterm2_shell_integration.zsh
 
-source ~/.dotfiles/.p10k.zsh
-
-exec zsh
+# zplug
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
