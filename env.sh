@@ -1,5 +1,6 @@
 # local bin
 PATH="$HOME/bin:$PATH"
+PATH="/usr/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/bin:$PATH"
 
