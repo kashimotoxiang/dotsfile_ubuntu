@@ -1,20 +1,3 @@
-export LANG= "en_US.UTF-8"
-export LANGUAGE= "en_US.UTF-8"
-export LC_CTYPE= "en_US.UTF-8"
-export LC_NUMERIC= "en_US.UTF-8"
-export LC_TIME= "en_US.UTF-8"
-export LC_COLLATE= "en_US.UTF-8"
-export LC_MONETARY= "en_US.UTF-8"
-export LC_MESSAGES= "en_US.UTF-8"
-export LC_PAPER= "en_US.UTF-8"
-export LC_NAME= "en_US.UTF-8"
-export LC_ADDRESS= "en_US.UTF-8"
-export LC_TELEPHONE= "en_US.UTF-8"
-export LC_MEASUREMENT= "en_US.UTF-8"
-export LC_IDENTIFICATION= "en_US.UTF-8"
-export LC_ALL= "en_US.UTF-8"
-
-
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
@@ -37,6 +20,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
 git clone https://github.com/kashimotoxiang/dotsfile_ubuntu.git /root/.dotfiles
 
 # update config file
+ln -sf /root/.dotfiles/.p10k.zsh           /root/.p10k.zsh
 ln -sf /root/.dotfiles/.zshrc           /root/.zshrc
 ln -sf /root/.dotfiles/.gitconfig       /root/.gitconfig
 ln -sf /root/.dotfiles/.gitignore       /root/.gitignore
