@@ -22,7 +22,5 @@ export _CTRL_T_COMMAND=$_DEFAULT_COMMAND
 export _ALT_C_COMMAND="fd -t d . "
 source ~/.fzf.zsh
 
-
-# 你可以使用fd生成fzf命令行模糊查找器的输入:
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

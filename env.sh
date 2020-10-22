@@ -19,9 +19,9 @@ if [[ -f ${HOME}/opt/anaconda3 ]]; then
     unset __conda_setup
 
     # virtualenvwrapper
-    export VIRTUALENV_USE_DISTRIBUTE=1        #  总是使用 pip/distribute
-    export WORKON_HOME="${HOME}/opt/anaconda3/envs"      # 所有虚拟环境存储的目录
-    export VIRTUALENVWRAPPER_PYTHON="${HOME}/opt/anaconda3/bin/python"      # 所有虚拟环境存储的目录
+    export VIRTUALENV_USE_DISTRIBUTE=1
+    export WORKON_HOME="${HOME}/opt/anaconda3/envs"
+    export VIRTUALENVWRAPPER_PYTHON="${HOME}/opt/anaconda3/bin/python"
     source ${HOME}/opt/anaconda3/bin/virtualenvwrapper.sh
     export PIP_VIRTUALENV_BASE=$WORKON_HOME
     export PIP_RESPECT_VIRTUALENV=true
